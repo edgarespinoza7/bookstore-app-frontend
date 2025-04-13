@@ -39,13 +39,13 @@ const TopSellers = () => {
 
   return (
     <div className="py-10 px-4 md:px-12">
-      <h2 className="text-3xl font-semibold mb-6">Top Sellers</h2>
+      <h2 className="text-3xl font-primary text-gray-800 mb-6">Top Sellers</h2>
       {/* Dropdown for categories */}
       <div className="mb-8 flex items-center">
         <select
           name="category"
           id="category"
-          className="px-4 py-2 border bg-[#eaeaea] border-gray-300 rounded-md focus:outline-none"
+          className="px-4 py-2 bg-[#faf0eb] rounded-md focus:outline-none"
           onChange={(e) => setSelectedCategory(e.target.value)}
         >
           {categories.map((category) => (

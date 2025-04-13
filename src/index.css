@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ffce1a;
+  --color-primary: #FF500B;
   --color-secondary: #0d0842;
   --color-blackBG: #f3f3f3;
   --color-favorite: #ff5541;
-  --font-primary: "Montserrat", "sans-serif";
+  --font-primary: "DM Serif Display", "serif";
   --font-secondary: "Nunito Sans", "sans-serif";
 }
 
@@ -42,7 +42,7 @@
 }
 
 .btn-primary {
-  @apply bg-primary py-2 rounded-md text-base font-secondary font-bold hover:bg-secondary hover:text-white transition-all duration-200 cursor-pointer;
+  @apply bg-primary py-2 rounded-md text-base font-secondary font-bold hover:bg-secondary text-white transition-all duration-200 cursor-pointer;
 }
 
 .html {

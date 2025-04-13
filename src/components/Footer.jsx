@@ -1,5 +1,6 @@
 import React from 'react'
 import footerLogo from '../assets/footer-logo.png'
+import bookstoreLogo from '../assets/Book.svg'
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-center gap-8 px-4'>
         {/* Left Side - Logo and Nav */}
         <div className='md:w-1/2 w-full'>
-          <img src={footerLogo} alt="logo" className='mb-5 w-36' />
+          <img src={bookstoreLogo} alt="logo" className='mb-5 w-12' />
           <ul className='flex flex-col md:flex-row gap-4'>
             <li><a href="#about" className='hover:text-primary'>About</a></li>
             <li><a href="#features" className='hover:text-primary'>Features</a></li>
@@ -21,13 +22,13 @@ const Footer = () => {
         </div>
         {/* Right Side - Newsletter */}
         <div className='md:w-1/2 w-full'>
-          <p className='mb-4'>Subscribe to our newsletter to receive the latest updates, news, and offers!</p>
+          <p className='mb-6 font-primary text-2xl'>Subscribe to our newsletter to receive the latest updates, news, and offers!</p>
           <div className='flex'>
             <input type="email"
               placeholder='Enter your email'
-              className='w-full px-4 py-2 rounded-l-md text-black bg-white border-2 border-primary'
+              className='w-full px-4 py-2 rounded-l-md text-black bg-white focus:outline-none'
             />
-            <button className='bg-primary px-6 py-2 text-black rounded-r-md hover:bg-amber-400 hover:text-white cursor-pointer'>Subscribe</button>
+            <button className='bg-primary hover:bg-orange-500 px-6 py-2 rounded-r-md  text-white cursor-pointer'>Subscribe</button>
           </div>
         </div>
       </div>

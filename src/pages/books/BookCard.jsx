@@ -19,19 +19,19 @@ const BookCard = ({ book }) => {
   return (
     <div className="rounded-lg transition-shadow duration-300 ease-in-out shadow-md hover:shadow-lg">
       <div className="flex flex-col sm:flex-row sm:items-center sm:h-72 sm:justify-center gap-4 p-4">
-        <div className="sm:h-72 sm:flex-shrink-0 border rounded-md">
+        <div className="sm:h-72 sm:flex-shrink-0 border border-gray-300 rounded-md">
           <Link to={`/books/${_id}`}>
             <img
               src={`${getImgUrl(coverImage)}`}
               alt={title}
-              className="w-full bg-cover p-2 rounded-md cursor-pointer hover:scale-105 transition-all duration-200"
+              className="w-full bg-cover p-1 rounded-md cursor-pointer hover:scale-105 transition-all duration-200"
             />
           </Link>
         </div>
 
         <div>
           <Link to={`/books/${_id}`}>
-            <h3 className="text-xl font-semibold hover:text-blue-600 mb-3">
+            <h3 className="text-2xl font-primary text-gray-700 hover:text-gray-900 mb-3">
               {title}
             </h3>
           </Link>
